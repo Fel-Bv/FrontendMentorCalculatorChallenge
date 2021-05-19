@@ -32,16 +32,16 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-<!-- ### Links
+### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [Calculator live site URL](https://fel-bv.github.io/FrontendMentorCalculatorChallenge/)
 
 <!-- ## My process -->
 
-### Continued development
+<!-- ### Continued development
 
-I want to continue focusing on CSS Flexbox in future projects
+I want to continue focusing on CSS Flexbox in future projects -->
 
 ## Author
 
