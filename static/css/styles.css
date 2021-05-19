@@ -42,7 +42,7 @@
 }
 
 .container {
-    width: 375px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -62,7 +62,7 @@ body {
 .card {
     margin: 0;
     padding: 3%;
-    width: 375px;
+    width: 500px;
     height: 100vh;
     background-color: #50509f;
     align-items: center;
@@ -177,11 +177,15 @@ body {
 
 .card-body .keypad .horizontal-layout {
     height: 20%;
-    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.card-body .keypad .horizontal-layout:first-child {
+    margin: 0;
 }
 
 .card-body .keypad button {
-    margin-left: 15px;
+    margin-left: 20px;
     border-radius: 5px;
     border: none;
     height: 100%;

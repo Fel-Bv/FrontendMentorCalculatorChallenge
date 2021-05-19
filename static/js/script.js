@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', DOMevent => {
             attribution.style.bottom = '0vh'
         }
     })
+    attribution.click()
 })
 
 function getCookie(cname) {
