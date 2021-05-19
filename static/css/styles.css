@@ -1,3 +1,30 @@
+@keyframes moveAttributionDown {
+    0% { bottom: -0vh; }
+    10% { bottom: -.9vh; }
+    20% { bottom: -1.8vh; }
+    30% { bottom: -2.7vh; }
+    40% { bottom: -3.6vh; }
+    50% { bottom: -4.5vh; }
+    60% { bottom: -5.4vh; }
+    70% { bottom: -6.3vh; }
+    80% { bottom: -7.2vh; }
+    90% { bottom: -8.1vh; }
+    100% { bottom: -9vh; }
+}
+@keyframes moveAttributionUp {
+    0% { bottom: -9vh; }
+    10% { bottom: -8.1vh; }
+    20% { bottom: -7.2vh; }
+    30% { bottom: -6.3vh; }
+    40% { bottom: -5.4vh; }
+    50% { bottom: -4.5vh; }
+    60% { bottom: -3.6vh; }
+    70% { bottom: -2.7vh; }
+    80% { bottom: -1.8vh; }
+    90% { bottom: -.9vh; }
+    100% { bottom: 0vh; }
+}
+
 * {
     box-sizing: border-box;
 }

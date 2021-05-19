@@ -198,6 +198,29 @@ document.addEventListener('DOMContentLoaded', DOMevent => {
             entry.value += btn.innerText
         }
     })
+
+
+    const attribution = document.querySelector('.attribution')
+    attribution.onclick = () => {
+        const bottom = attribution.style.bottom
+        console.log()
+        
+        if (bottom !== '-7.2vh') {
+            attribution.style.animation = 'moveAttributionDown .3s'
+            attribution.style.bottom = '-7.2vh'
+        } else {
+            attribution.style.animation = 'moveAttributionUp .3s'
+            attribution.style.bottom = '0vh'
+        }
+    }
+    attribution.addEventListener('mouseover', () => {
+        const bottom = attribution.style.bottom
+        
+        if (bottom) {
+            attribution.style.animation = 'moveAttributionUp .3s'
+            attribution.style.bottom = '0vh'
+        }
+    })
 })
 
 function getCookie(cname) {
