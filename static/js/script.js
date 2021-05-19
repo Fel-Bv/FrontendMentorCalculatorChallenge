@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', DOMevent => {
     const entry = document.getElementById('entry')
     const card = document.querySelector('.card')
     var theme = getCookie('theme')
+    if (! theme) theme = 1
     const numbersBtns = []
     const switcher = {
         element: document.getElementById('switch'), 
