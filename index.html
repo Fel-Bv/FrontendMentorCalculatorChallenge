@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com"> -->
+		<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="./static/css/styles.css">
+
+		<script type="module" src="./static/js/calculator/main.js"></script>
+		<script src="./static/js/script.js"></script>
+
+		<title>Frontend Mentor | Calculator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution { font-size: 11px; text-align: center; background-color: #000; }
+			.attribution p { color: white; display: inline; }
+			.attribution a { color: #C0C0FF; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card vertical-layout">
+				<div class="horizontal-layout card-header col-12">
+					<span class="card-header-title col-6">
+						<h2>
+							calc
+						</h2>
+					</span>
+
+					<span class="switch-container col-6 horizontal-layout">
+						<div class="switch-label col-6">
+							THEME
+						</div>
+
+						<div class="switch col-6 vertical-layout">
+							<div class="nums col-12 horizontal-layout">
+								<span class="col-4">1</span><span class="col-4">2</span><span class="col-4">3</span>
+							</div>
+							<div class="control col-12">
+								<div class="positions col-12 horizontal-layout" id="switch">
+									<div class="selector col-3">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+
+				<div class="card-body col-12 vertical-layout">
+					<input type="text" id="entry" class="col-12">
+
+					<div class="keypad col-12 vertical-layout" id="keypad">
+						<div class="horizontal-layout">
+							<button class="primary-button col-3">8</button>
+							<button class="primary-button col-3">7</button>
+							<button class="primary-button col-3">9</button>
+							<button class="secondary-button col-3" id="btn-del">DEL</button>
+						</div>
+
+						<div class="horizontal-layout">
+							<button class="primary-button col-3">5</button>
+							<button class="primary-button col-3">4</button>
+							<button class="primary-button col-3">6</button>
+							<button class="primary-button col-3" id="btn-sum">+</button>
+						</div>
+
+						<div class="horizontal-layout">
+							<button class="primary-button col-3">2</button>
+							<button class="primary-button col-3">1</button>
+							<button class="primary-button col-3">3</button>
+							<button class="primary-button col-3" id="btn-subs">-</button>
+						</div>
+
+						<div class="horizontal-layout">
+							<button class="primary-button col-3">0</button>
+							<button class="primary-button col-3" id="btn-dot">.</button>
+							<button class="primary-button col-3" id="btn-div">/</button>
+							<button class="primary-button col-3" id="btn-mult">&times;</button>
+						</div>
+						<div class="horizontal-layout">
+							<button class="secondary-button col-6" id="btn-reset">RESET</button>
+							<button class="result-button col-6" id="btn-result">=</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="attribution">
+				<p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p> 
+				<p>Coded by <a href="#">Felipe Alcantar</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

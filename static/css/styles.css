@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+.horizontal-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+/* Card */
+.card {
+    margin: 0;
+    padding: 3%;
+    width: 375px;
+    height: 100vh;
+    background-color: #50509f;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.card .card-header {
+    height: 10%;
+    position: top;
+    padding: 0;
+    margin-bottom: 5%;
+}
+
+.card .card-header * {
+    margin: 0;
+}
+
+.card .card-header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card .card-header-title h2 {
+    font-weight: bold;
+    color: inherit;
+}
+
+
+
+.card .card-body {
+    height: 90%;
+}
+
+
+
+.switch-container {
+    height: 100%;
+}
+
+.switch-container .switch-label {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 80%;
+    height: 100%;
+}
+
+.switch-container .switch * {
+    height: 50%;
+}
+
+.switch-container .switch .nums span {
+    text-align: center;
+    font-size: 80%;
+}
+
+.switch-container .switch .control {
+    padding-bottom: .2vw;
+    padding-top: .2vw;
+}
+
+.switch-container .switch .control .positions {
+    height: 100%;
+    background-color: #30307d;
+    border-radius: 34px;
+    padding: 4%;
+}
+
+.switch-container .switch .control .positions.left {
+    justify-content: flex-start;
+}
+
+.switch-container .switch .control .positions.center {
+    justify-content: center;
+}
+
+.switch-container .switch .control .positions.right {
+    justify-content: flex-end;
+}
+
+.switch-container .switch .control .selector {
+    background-color: #F06060;
+    border-radius: 34px;
+    height: 100%;
+    transition: .4s;
+}
+
+
+
+.card-body #entry {
+    height: 20%;
+    background-color: hsl(224, 36%, 15%);
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    text-align: right;
+    margin-bottom: 5%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.card-body .keypad {
+    padding: 6%;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 12px;
+    height: 100%;
+}
+
+.card-body .keypad .horizontal-layout {
+    height: 20%;
+    margin-bottom: 15px;
+}
+
+.card-body .keypad button {
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    height: 100%;
+    font-weight: bold;
+}
+
+.card-body .keypad .primary-button {
+    font-size: 32px;
+}
+
+
+.card-body .keypad button:first-child {
+    margin: 0;
+}
+
+
+
+
+
+.attribution {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 9vh;
+    padding: 0;
+    position: fixed;
+    left: 0;
+}
+
+.attribution p {
+    margin: 1.5%;
+    padding: 0;
+}
+
+
+
+
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25.00%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50.00%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75.00%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100.0%; }
