@@ -152,6 +152,26 @@ document.addEventListener('DOMContentLoaded', DOMevent => {
     changeTheme(card, switcher.position)
 
     switcher['element'].addEventListener('click', ev => {
+        // console.log(ev.clientX, switcher.element.style.marginLeft)
+        // mouse = ''
+
+        // if (ev.clientX < 525) { mouse = 'left' }
+        // else if (ev.clientX <= 555) { mouse = 'center' }
+        // else if (ev.clientX > 555) { mouse = 'right' }
+
+        // switch (mouse) {
+        //     case 'left':
+        //         switcher.position = 3
+        //         break
+        //     case 'center':
+        //         switcher.position = 2
+        //         break
+        //     case 'right':
+        //         switcher.position = 1
+        //         break
+        // }
+        // console.log(switcher)
+
         switcher.element.classList.remove('center')
         switcher.element.classList.remove('right')
         switcher.element.classList.remove('left')
@@ -221,7 +241,6 @@ document.addEventListener('DOMContentLoaded', DOMevent => {
             attribution.style.bottom = '0vh'
         }
     })
-    attribution.click()
 })
 
 function getCookie(cname) {

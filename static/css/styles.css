@@ -150,7 +150,7 @@ body {
     background-color: #F06060;
     border-radius: 34px;
     height: 100%;
-    transition: .4s;
+    transition: all .4s;
 }
 
 
@@ -167,6 +167,11 @@ body {
     margin-bottom: 5%;
     padding-right: 8%;
     padding-left: 8%;
+    user-select: text;
+}
+
+.card-body #entry::selection {
+    background-color: #ADADAD99;
 }
 
 .card-body .keypad {
@@ -216,6 +221,7 @@ body {
     padding: 0;
     position: fixed;
     left: 0;
+    bottom: 0;
 }
 
 .attribution p {

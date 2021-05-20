@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         nums: [], 
     }
     const addNum = () => {
+        if (! entry.value) {
+            return
+        }
         try {
             calculator.addNum(parseFloat(entry.value))
         } catch {
@@ -24,7 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const updateEntry = () => {
         if (entry.value != calculator.nums[0]) {
-            entry.value = calculator.nums[0]
+            if (! calculator.nums || ! calculator.nums[0]) {
+                return
+            }
+            entry.value = ''
+            entry.placeholder = calculator.nums[0]
         } else {
             if (calculator.nums.length === 2) {
                 entry.value = calculator.nums[0]
@@ -111,8 +118,52 @@ document.addEventListener('DOMContentLoaded', () => {
             entry.value += '.'
         }
     })
+
+    document.addEventListener('keydown', event => {
+        const key = event.key
+
+        if (parseInt(key)) {
+            entry.value += key
+            return
+        }
+
+        switch (key) {
+            case '*':
+                btns.mult.click()
+                break
+            case '+':
+                btns.sum.click()
+                break
+            case '-':
+                btns.subs.click()
+                break
+            case '/':
+                btns.div.click()
+                break
+            case '.':
+                btns.dot.click()
+                break
+            case 'Backspace':
+                var val = entry.value
+                entry.value = val.substring(0, val.length - 1)
+                break
+            case 'Delete':
+                btns.reset.click()
+                break
+            case 'Escape':
+                window.close()
+                break
+            case 'Enter':
+                btns.result.click()
+                break
+            case 'Tab':
+                document.getElementById('switch').click()
+                break
+        }
+    })
 })
 
 function cleanEntry(entry) {
+    entry.placeholder = '0'
     entry.value = ''
 }
